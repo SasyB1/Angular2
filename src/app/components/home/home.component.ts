@@ -9,12 +9,7 @@ import { Observable } from 'rxjs';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  fetchedPost: iUser = {
-    posts: [],
-    total: 0,
-    skip: 0,
-    limit: 0,
-  };
+  fetchedPost: iUser | null = null;
   postInEvidenza: iUserDati | null = null;
   postRandom: iUserDati[] = [];
   constructor(private http: HttpClient) {}
