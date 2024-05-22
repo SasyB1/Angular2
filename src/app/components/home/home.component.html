@@ -3,11 +3,9 @@
   <h2>{{ postInEvidenza.title }}</h2>
   <p>{{ postInEvidenza.body }}</p>
 </div>
-
-<section>
-  <h3>Potrebbero piacerti questi post</h3>
+<h3>Potrebbero piacerti questi post</h3>
+<section class="d-flex">
   <div *ngFor="let post of postRandom">
-    <h2>{{ post.title }}</h2>
-    <p>{{ post.body }}</p>
+    <app-card [postData]="post"></app-card>
   </div>
 </section>

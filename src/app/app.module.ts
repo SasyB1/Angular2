@@ -9,6 +9,7 @@ import { PostDetailComponent } from './components/post-detail/post-detail.compon
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     PostDetailComponent,
     NavbarComponent,
     HomeComponent,
+    CardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
