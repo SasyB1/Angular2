@@ -1,0 +1,13 @@
+<app-navbar></app-navbar>
+<div *ngIf="postInEvidenza != null">
+  <h2>{{ postInEvidenza.title }}</h2>
+  <p>{{ postInEvidenza.body }}</p>
+</div>
+
+<section>
+  <h3>Potrebbero piacerti questi post</h3>
+  <div *ngFor="let post of postRandom">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
+  </div>
+</section>
