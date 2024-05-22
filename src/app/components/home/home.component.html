@@ -4,7 +4,7 @@
   <p>{{ postInEvidenza.body }}</p>
 </div>
 <h3>Potrebbero piacerti questi post</h3>
-<section class="d-flex">
+<section class="d-flex justify-content-center">
   <div *ngFor="let post of postRandom">
     <app-card [postData]="post"></app-card>
   </div>
